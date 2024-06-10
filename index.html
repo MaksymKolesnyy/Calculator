@@ -10,27 +10,27 @@
 
 <body>
     <div class="calculator-body">
-        <div id="screen">14</div>
+        <input id="screen"></input>
         <div class="buttons-box">
-            <button id="C">C</button>
-            <button id="+/-">+/-</button>
-            <button id="%">%</button>
-            <button id="/">/</button>
-            <button id="7">7</button>
-            <button id="8">8</button>
-            <button id="9">9</button>
-            <button id="X">X</button>
-            <button id="4">4</button>
-            <button id="5">5</button>
-            <button id="6">6</button>
-            <button id="-">-</button>
-            <button id="1">1</button>
-            <button id="2">2</button>
-            <button id="3">3</button>
-            <button id="+">+</button>
-            <button id="0">0</button>
-            <button id=",">,</button>
-            <button id="=">=</button>
+            <button id="cancel" class="gray" onclick="clearInput()">C</button>
+            <button id="change" class="gray">+/-</button>
+            <button id="percentage" class="gray">%</button>
+            <button id="divide" class="orange" onclick="insertValue('/')">/</button>
+            <button id="seven" onclick="insertValue('7')">7</button>
+            <button id="eight" onclick="insertValue('8')">8</button>
+            <button id="nine" onclick="insertValue('9')">9</button>
+            <button id="X" class="orange" onclick="insertValue('*')">X</button>
+            <button id="four" onclick="insertValue('4')">4</button>
+            <button id="five" onclick="insertValue('5')">5</button>
+            <button id="six" onclick="insertValue('6')">6</button>
+            <button id="minus" class="orange" onclick="insertValue('-')">-</button>
+            <button id="one" onclick="insertValue('1')">1</button>
+            <button id="two" onclick="insertValue('2')">2</button>
+            <button id="three" onclick="insertValue('3')">3</button>
+            <button id="plus" class="orange" onclick="insertValue('+')">+</button>
+            <button id="zero" onclick="insertValue('0')">0</button>
+            <button id="comma" onclick="insertValue('.')">,</button>
+            <button id="equal" class="orange" onclick="calculateResult()">=</button>
         </div>
     </div>
 
