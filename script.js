@@ -20,3 +20,5 @@ function calculateResult() {
         inputField.value = 'Error';
     }
 }
+
+//fix +/- e %
